@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/worldmap/static/css/main.bfd5b77a.css",
-    "main.js": "/worldmap/static/js/main.030c67d9.js",
-    "static/js/453.dbcc93df.chunk.js": "/worldmap/static/js/453.dbcc93df.chunk.js",
-    "static/media/world.geojson": "/worldmap/static/media/world.77adba54836af4457a31.geojson",
-    "static/media/logo.svg": "/worldmap/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/worldmap/index.html",
-    "main.bfd5b77a.css.map": "/worldmap/static/css/main.bfd5b77a.css.map",
-    "main.030c67d9.js.map": "/worldmap/static/js/main.030c67d9.js.map",
-    "453.dbcc93df.chunk.js.map": "/worldmap/static/js/453.dbcc93df.chunk.js.map"
+    "main.css": "/continentmap/static/css/main.bfd5b77a.css",
+    "main.js": "/continentmap/static/js/main.6e38c17d.js",
+    "static/js/453.dbcc93df.chunk.js": "/continentmap/static/js/453.dbcc93df.chunk.js",
+    "static/media/world.geojson": "/continentmap/static/media/world.77adba54836af4457a31.geojson",
+    "static/media/logo.svg": "/continentmap/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/continentmap/index.html",
+    "main.bfd5b77a.css.map": "/continentmap/static/css/main.bfd5b77a.css.map",
+    "main.6e38c17d.js.map": "/continentmap/static/js/main.6e38c17d.js.map",
+    "453.dbcc93df.chunk.js.map": "/continentmap/static/js/453.dbcc93df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfd5b77a.css",
-    "static/js/main.030c67d9.js"
+    "static/js/main.6e38c17d.js"
   ]
 }
