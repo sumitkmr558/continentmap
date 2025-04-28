@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkworld_map=self.webpackChunkworld_map||[]).push([[599],{9599:(e,n,s)=>{s.r(n),s.d(n,{default:()=>r});s(5043);var h=s(8231),i=s(579);function r(){return(0,i.jsxs)("div",{children:[(0,i.jsx)("h1",{children:"About"}),(0,i.jsx)("p",{children:"This app highlights continents on a map using React Router."}),(0,i.jsx)(h.N_,{to:"/",children:"Home"})]})}}}]);
+//# sourceMappingURL=599.443ff934.chunk.js.map
