@@ -70,4 +70,67 @@
 }
 
 
+.card_primary {
+  border-radius: var(--border_radius_lg);
+  padding: 0;
+  border: 2px solid var(--gc_gray_300);
+  box-shadow: none;
+}
+
+.card_primary .MuiCardHeader-root,
+.card_primary .MuiCardActions-root {
+  background: rgba(221, 230, 242, 0.40);
+  padding: 8px 12px;
+}
+
+.card_primary .MuiCardHeader-root {
+  border-bottom: 2px solid var(--gc_gray_300);
+}
+
+.card_primary .MuiCardHeader-root .MuiCardHeader-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card_primary .MuiCardHeader-root h6,
+.card_primary .MuiCardHeader-title {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.card_primary .MuiCardHeader-root .MuiButtonBase-root {
+  padding: 2px;
+  position: relative;
+  top: 2px;
+}
+
+.card_primary .MuiCardActions-root {
+  border-top: 2px solid var(--gc_gray_300);
+  justify-content: flex-end;
+}
+
+.MuiDataGrid-footerContainer .MuiInputBase-root,
+.MuiDataGrid-footerContainer .MuiFormControl-root {
+  width: initial;
+}
+
+.card_primary .MuiCardActions-root .MuiButton-outlined {
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.card_primary .MuiCardActions-root .MuiSvgIcon-root {
+  font-size: 14px;
+}
+
+
+
+::placeholder {
+  font-size: 13px;
+  color: #757579;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
 

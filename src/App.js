@@ -1,15 +1,29 @@
-import logo from "./logo.svg";
+// src/App.js
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import WorldMap from "./WorldMap";
-import GlobeComponent from "./GlobeComponent";
+import Navbar from "./components/Navbar";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const MapPage = lazy(() => import("./pages/MapPage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const WorldMap = lazy(() => import("./pages/WorldMap"));
+const GuessMyNameGame = lazy(() => import("./pages/GuessMyNameGame"));
 
 function App() {
   return (
-    <div className="App">
-      <h1>World Map</h1>
-      {/* <WorldMap /> */}
-      <GlobeComponent />
-    </div>
+    <Router>
+      <Navbar /> {/* ← top menu always visible */}
+      <Suspense fallback={<div>Loading…</div>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/map" element={<MapPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/wmap" element={<WorldMap />} />
+          <Route path="/gmng" element={<GuessMyNameGame />} />
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 

@@ -12,9 +12,6 @@ import {
   Paper,
 } from "@mui/material";
 
-// const geoUrl =
-//   "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson";
-
 const WorldMap = () => {
   const [info, setInfo] = useState(null);
   console.log(info);
@@ -26,85 +23,39 @@ const WorldMap = () => {
 
   return (
     <>
-      {/* <ComposableMap>
-        <Geographies geography={worldgeojson}>
-          {({ geographies }) => {
-            return geographies.map((geo) => {
-              const country = countriesData.find(
-                (c) =>
-                  c.name.toLowerCase() === geo.properties.name?.toLowerCase()
-              );
-
-              return (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  onClick={() => {
-                    if (country) {
-                      handleClick(country);
-                    }
-                  }}
-                  style={{
-                    default: { fill: "#D6D6DA", outline: "none" },
-                    hover: { fill: "#F53", outline: "none" },
-                    pressed: { fill: "#E42", outline: "none" },
-                  }}
-                />
-              );
-            });
-          }}
-        </Geographies>
-      </ComposableMap>
-
-      {info && (
-        <div className="popup">
-          <h2>{info.name}</h2>
-          <p>Capital: {info.capital}</p>
-          <p>Continent: {info.continent}</p>
-          <p>Area: {info.area} sq km</p>
-          <button onClick={() => setInfo(null)}>Close</button>
-        </div>
-      )} */}
       <Container maxWidth="lg" sx={{ marginTop: 4 }}>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            padding: 0,
-            border: 2,
-          }}
-        >
-          <ComposableMap>
-            <Geographies geography={worldgeojson}>
-              {({ geographies }) => {
-                return geographies.map((geo) => {
-                  const country = countriesData.find(
-                    (c) =>
-                      c.name.toLowerCase() ===
-                      geo.properties.name?.toLowerCase()
-                  );
+        <ComposableMap>
+          <Geographies
+            geography={worldgeojson}
+            sx={{ padding: "0 ! important" }}
+          >
+            {({ geographies }) => {
+              return geographies.map((geo) => {
+                const country = countriesData.find(
+                  (c) =>
+                    c.name.toLowerCase() === geo.properties.name?.toLowerCase()
+                );
 
-                  return (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      onClick={() => {
-                        if (country) {
-                          handleClick(country);
-                        }
-                      }}
-                      style={{
-                        default: { fill: "#D6D6DA", outline: "none" },
-                        hover: { fill: "#F53", outline: "none" },
-                        pressed: { fill: "#E42", outline: "none" },
-                      }}
-                    />
-                  );
-                });
-              }}
-            </Geographies>
-          </ComposableMap>
-        </Box>
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onClick={() => {
+                      if (country) {
+                        handleClick(country);
+                      }
+                    }}
+                    style={{
+                      default: { fill: "#D6D6DA", outline: "none" },
+                      hover: { fill: "#F53", outline: "none" },
+                      pressed: { fill: "#E42", outline: "none" },
+                    }}
+                  />
+                );
+              });
+            }}
+          </Geographies>
+        </ComposableMap>
 
         {info && (
           <div
