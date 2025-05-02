@@ -1,0 +1,24 @@
+{
+  "states": [
+    {
+      "id": "IN-MH",
+      "name": "Maharashtra",
+      "capital": "Mumbai",
+      "population": "124 million",
+      "area": "307,713 km²",
+      "literacy": "82.3%",
+      "majorCities": ["Mumbai", "Pune", "Nagpur"],
+      "coordinates": [75.7139, 19.7515]
+    },
+    {
+      "id": "IN-KA",
+      "name": "Karnataka",
+      "capital": "Bengaluru",
+      "population": "68 million",
+      "area": "191,791 km²",
+      "literacy": "75.4%",
+      "majorCities": ["Bengaluru", "Mysuru", "Hubli"],
+      "coordinates": [76.9495, 15.3173]
+    }
+  ]
+}

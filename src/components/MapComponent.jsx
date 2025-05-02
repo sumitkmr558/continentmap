@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Container, Box, Typography, Stack, Button } from "@mui/material";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { motion } from "framer-motion"; // 🪄 smooth animation library
+import geoUrl from "./continents.json";
 
-const geoUrl =
-  "https://gist.githubusercontent.com/hrbrmstr/91ea5cc9474286c72838/raw/continents.json";
+// const geoUrl = "continents.json";
 
 const continentsData = [
   { name: "Africa", color: "red", tcolor: "black" },

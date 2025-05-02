@@ -9,6 +9,7 @@ const MapPage = lazy(() => import("./pages/MapPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const WorldMap = lazy(() => import("./pages/WorldMap"));
 const GuessMyNameGame = lazy(() => import("./pages/GuessMyNameGame"));
+const IndianMap = lazy(() => import("./pages/IndiaMap"));
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/wmap" element={<WorldMap />} />
           <Route path="/gmng" element={<GuessMyNameGame />} />
+          <Route path="/im" element={<IndianMap />} />
         </Routes>
       </Suspense>
     </Router>
