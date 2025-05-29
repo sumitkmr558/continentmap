@@ -26,6 +26,8 @@ const SingleServicePage = Loadable(lazy(() => import("pages/singleService")));
 const SingleProviderPage = Loadable(lazy(() => import("pages/singleProvider")));
 const CostCalculatorPage = Loadable(lazy(() => import("pages/CostCalculator")));
 const SupportPage = Loadable(lazy(() => import("pages/SupportPage")));
+const TypingPage = Loadable(lazy(() => import("pages/Typing")));
+
 const CostInvoice = Loadable(
   lazy(() => import("../components/CostCaculator/CostInvoice"))
 );

@@ -16,6 +16,7 @@ const menuItems = [
   { label: "Countries", path: "/wmap" },
   { label: "Guess MY Name", path: "/gmng" },
   { label: "Indian Map", path: "/im" },
+  { label: "Typing", path: "/typing" },
 ];
 
 export default function Navbar() {

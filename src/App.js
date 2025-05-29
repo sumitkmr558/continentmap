@@ -10,6 +10,7 @@ const AboutPage = lazy(() => import("./pages/AboutPage"));
 const WorldMap = lazy(() => import("./pages/WorldMap"));
 const GuessMyNameGame = lazy(() => import("./pages/GuessMyNameGame"));
 const IndianMap = lazy(() => import("./pages/IndiaMap"));
+const Typing = lazy(() => import("./pages/Typing"));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/wmap" element={<WorldMap />} />
           <Route path="/gmng" element={<GuessMyNameGame />} />
           <Route path="/im" element={<IndianMap />} />
+          <Route path="/typing" element={<Typing />} />
         </Routes>
       </Suspense>
     </Router>
