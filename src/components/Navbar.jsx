@@ -17,6 +17,7 @@ const menuItems = [
   { label: "Guess MY Name", path: "/gmng" },
   { label: "Indian Map", path: "/im" },
   { label: "Typing", path: "/typing" },
+  { label: "Paint", path: "/paint" },
 ];
 
 export default function Navbar() {
